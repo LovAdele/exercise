@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+venv/
+
+# 运行日志
+server.log
+server_err.log
+
+# IDE
+.idea/
+.vscode/
