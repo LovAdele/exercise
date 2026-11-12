@@ -29,6 +29,12 @@ def hands_on_1():
     return render_template("hands-on-1.html")
 
 
+@app.route("/about")
+def about():
+    """Serve the About page."""
+    return render_template("about.html")
+
+
 if __name__ == "__main__":
     ip = get_lan_ip()
     print(f" * Local:   http://127.0.0.1:{PORT}")
