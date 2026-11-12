@@ -25,8 +25,14 @@ def get_lan_ip() -> str:
 @app.route("/")
 @app.route("/hands-on-1")
 def hands_on_1():
-    """Serve the single 'hands-on 1' page."""
+    """Serve the 'hands-on 1' homepage."""
     return render_template("hands-on-1.html")
+
+
+@app.route("/about")
+def about():
+    """Serve the 'About' page."""
+    return render_template("about.html")
 
 
 if __name__ == "__main__":
