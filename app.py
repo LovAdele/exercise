@@ -35,6 +35,12 @@ def about():
     return render_template("about.html")
 
 
+@app.route("/index")
+def index():
+    """Serve the original Exercise 1 page."""
+    return render_template("index.html")
+
+
 if __name__ == "__main__":
     ip = get_lan_ip()
     print(f" * Local:   http://127.0.0.1:{PORT}")
